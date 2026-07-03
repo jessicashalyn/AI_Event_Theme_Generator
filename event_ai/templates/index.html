@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="{{ csrf_token }}">
+
+<title>AI Event Theme Generator</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉 AI Event Theme Generator</h1>
+
+<p class="subtitle">
+Create Amazing Event Themes Using AI
+</p>
+
+<div class="form-box">
+
+<label>Event Name</label>
+
+<input
+type="text"
+id="eventName"
+placeholder="Example : College Symposium">
+
+<label>Event Theme</label>
+
+<input
+type="text"
+id="eventTheme"
+placeholder="Example : Artificial Intelligence">
+
+<button id="generateBtn">
+
+✨ Generate Theme
+
+</button>
+
+</div>
+
+<div id="loading">
+
+Generating Amazing Ideas...
+
+</div>
+
+<div id="result">
+
+</div>
+
+</div>
+
+<div class="action-buttons">
+
+    <button id="copyBtn">
+        📋 Copy
+    </button>
+
+    <button id="downloadBtn">
+        📄 Download PDF
+    </button>
+
+    <button id="resetBtn">
+        🔄 Reset
+    </button>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
