@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 
 <title>AI Event Theme Generator</title>
 
-<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -74,7 +75,7 @@ Generating Amazing Ideas...
 
 </div>
 
-<script src="/static/js/script.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
 
 </body>
 </html>
