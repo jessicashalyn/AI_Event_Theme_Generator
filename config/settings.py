@@ -29,7 +29,11 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "ai-event-theme-generator-1.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
